@@ -22,8 +22,11 @@ const run = () => {
 };
 
 const init = () => {
-    run();
-    store.subscribe(run);
+    store.dispatch(actions.fetchData())
+        .then(() => {
+            run();
+            store.subscribe(run);
+        });
 };
 
 init();

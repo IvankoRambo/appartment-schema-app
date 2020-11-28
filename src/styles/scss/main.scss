@@ -1,8 +1,34 @@
 $color_1: tan;
 $color_2: black;
+$color_3: #eaf0ff;
+$color_4: #1aff1a;
+$color_5: #a9a9a9;
+$color_6: #c0c0c0;
+$color_7: red;
 
-h3 {
-    background-color: $color_1;
-    color: $color_2;
-    user-select: none;
+.b-app {
+    &-title {
+        background-color: $color_1;
+        color: $color_2;
+        user-select: none;
+    }
+
+    &-errored {
+        color: $color_7
+    }
+}
+
+.chart {
+    &-room {
+        fill: $color_3;
+    }
+
+    &-rect {
+        fill: $color_4
+    }
+
+    &-triangle {
+        stroke: $color_5;
+        fill: $color_6;
+    }
 }
